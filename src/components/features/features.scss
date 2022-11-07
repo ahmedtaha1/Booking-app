@@ -1,0 +1,20 @@
+.features {
+  padding: 60px 0 30px;
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    .item {
+      position: relative;
+      img {
+        border-radius: 10px;
+      }
+      .info {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        color: #fff;
+      }
+    }
+  }
+}

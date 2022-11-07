@@ -1,0 +1,94 @@
+.plist {
+  h1 {
+    font-size: 20px;
+  }
+
+  .types {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 0;
+    img {
+      border-radius: 10px;
+      height: 170px;
+      object-fit: cover;
+    }
+    @media (max-width: 767px) {
+      img {
+        height: auto;
+      }
+    }
+    h1 {
+      font-size: 18px;
+      color: #444;
+    }
+    h2 {
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
+  @media (max-width: 767px) {
+    .types {
+      flex-direction: column;
+      align-items: center;
+      .info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+  .props {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-bottom: 50px;
+  }
+  @media (max-width: 767px) {
+    .props {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 992px) {
+    .props {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  img {
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 12px;
+  }
+  @media (max-width: 767px) {
+    img {
+      height: auto;
+    }
+  }
+  span:not(:last-child) {
+    display: block;
+    margin-bottom: 5px;
+    &.name {
+      color: #333;
+      font-weight: bold;
+    }
+    &.city {
+      font-weight: 300;
+      color: #6b6b6b;
+    }
+    &.price {
+      color: #6b6b6b;
+      font-weight: 500;
+    }
+  }
+  button {
+    background-color: #003580;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 3px;
+    margin-right: 15px;
+    font-weight: bold;
+  }
+}

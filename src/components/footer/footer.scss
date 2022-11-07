@@ -1,0 +1,25 @@
+.footer {
+  padding: 25px 0;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+
+    li {
+      margin-bottom: 10px;
+      color: #003580;
+      cursor: pointer;
+    }
+  }
+  .ahmed {
+    margin-top: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 19px;
+    letter-spacing: 1.5px;
+    .icon {
+      color: red;
+      font-size: 19px;
+    }
+  }
+}
